@@ -12,7 +12,7 @@ class RootIndex extends React.Component {
           <Landing
             image={"pexels-transtudios-photography-&-video-10606514.jpg"}
             title="Snuggly App"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            content="Listen to your baby’s heartbeat, backed by science."
           />
         </Container>
       </Layout>
