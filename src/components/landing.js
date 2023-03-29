@@ -17,7 +17,17 @@ const Landing = ({ image, title, content }) => (
           {content}
         </div>
       )}
-      <Badge />
+      <a 
+        href="https://apps.apple.com/us/app/snuggly-baby-heartbeat-listen/id1663946323?itsct=apps_box_badge&amp;itscg=30200" 
+        className={styles.badgeLink}
+      >
+        <img
+          
+          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1673913600"
+          alt="Download on the App Store"
+          className={styles.badgeImage}
+        />
+      </a>
     </div>
   </div>
 )

@@ -61,6 +61,20 @@
   margin-bottom: var(--space-2xl);
 }
 
+.badgeLink {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 13px;
+  width: 250px;
+  height: 83px;
+}
+
+.badgeImage {
+  border-radius: 13px;
+  width: 250px;
+  height: 83px;
+}
+
 @media (min-width: 480px) {
   .details {
     padding-top: var(--space-3xl);
