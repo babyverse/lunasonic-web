@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "Lunasonic | Snuggly App",
+    description: "Official website of Snuggly App",
   },
   plugins: [
     {
