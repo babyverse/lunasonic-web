@@ -14,7 +14,7 @@ const getCookie = (name) => {
 
 const CookieConsentBanner = () => {
   const location = useLocation()
-  const [consentRequired, setConsentRequired] = useState(null)
+  const [showBanner, setShowBanner] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -24,27 +24,29 @@ const CookieConsentBanner = () => {
     if (existingConsent === "true") {
       // User already accepted, enable tracking
       enableTracking()
+      setShowBanner(false)
       setIsLoading(false)
       return
     }
 
     if (existingConsent === "false") {
-      // User already declined
+      // User already declined, don't show banner
+      setShowBanner(false)
       setIsLoading(false)
       return
     }
 
-    // Check geo cookie set by Netlify Edge Function
+    // No existing consent - check geo cookie set by Netlify Edge Function
     const geoConsentRequired = getCookie("geo_consent_required")
     
     if (geoConsentRequired === "false") {
       // User is NOT in a consent-required region, auto-enable tracking
       enableTracking()
-      setConsentRequired(false)
+      setShowBanner(false)
     } else {
       // User IS in a consent-required region OR geo not detected yet
       // Default to requiring consent (safe fallback)
-      setConsentRequired(true)
+      setShowBanner(true)
     }
     
     setIsLoading(false)
@@ -65,11 +67,8 @@ const CookieConsentBanner = () => {
     document.cookie = "gatsby-gdpr-facebook-pixel=false; path=/; max-age=31536000"
   }
 
-  // Don't render anything while checking geo
-  if (isLoading) return null
-
-  // Don't show banner if consent is not required for this region
-  if (consentRequired === false) return null
+  // Don't render anything while loading or if banner shouldn't be shown
+  if (isLoading || !showBanner) return null
 
   return (
     <CookieConsent
