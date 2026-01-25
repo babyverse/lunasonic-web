@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "public"
 
+# Edge function for geo-based consent detection
+[[edge_functions]]
+  path = "/*"
+  function = "geo-consent"
+
 # Gatsby generates hashed filenames for JS/CSS, safe to cache long-term
 [[headers]]
   for = "/*.js"
