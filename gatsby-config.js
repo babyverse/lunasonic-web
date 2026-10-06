@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     title: "Lunasonic | Snuggly App",
     description: "Official website of Snuggly App",
+    siteUrl: "https://www.snugglyapp.com",
   },
   plugins: [
     {

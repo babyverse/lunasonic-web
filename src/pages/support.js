@@ -1,43 +1,29 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import get from 'lodash/get'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 
+import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Container from '../components/container'
-import Hero from '../components/hero'
 
-class SupportIndex extends React.Component {
-  render() {
-    console.log(this.props.data)
-    const faqs = get(this, 'props.data.allContentfulFaq.nodes')
-
-    return (
-      <Layout location={this.props.location}>
-        <Container>
-          <Hero
-            title="Frequently asked questions"
-          />
-          {
-            React.Children.toArray(
-              faqs.map((faq) => {
-                return (
-                  <div>
-                    <h3>{faq.title}</h3>
-                    {renderRichText(faq.answer)}
-                  </div>
-                )
-              })
-            )
-          }
-        </Container>
-      </Layout>
-    )
-  }
-}
+const SupportIndex = ({ data, location }) => (
+  <Layout location={location}>
+    <Seo title="Support" />
+    <h1>Frequently asked questions</h1>
+    <div className="faq-list">
+      {data.allContentfulFaq.nodes.map((faq) => (
+        <details className="faq-item" key={faq.title}>
+          <summary>
+            {faq.title}
+            <span className="faq-icon" />
+          </summary>
+          <div className="faq-answer">{renderRichText(faq.answer)}</div>
+        </details>
+      ))}
+    </div>
+  </Layout>
+)
 
 export default SupportIndex
-
 
 export const pageQuery = graphql`
   query faqIndexQuery {

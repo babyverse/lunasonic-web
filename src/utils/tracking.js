@@ -1,8 +1,22 @@
 /**
- * Utility functions for tracking events with Facebook Pixel
- * Only fires events if the user has consented to tracking
+ * Utility functions for conversion tracking (Facebook Pixel + Google Analytics)
+ * Only fires events if the user has consented to the respective tracker
  * Automatically includes UTM parameters and click IDs for attribution
  */
+
+const UTM_PARAMS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
+
+// Ad platform click IDs, mapped to the campaign label used when an ad click
+// arrives without UTM parameters
+const CLICK_ID_SOURCES = {
+  fbclid: "facebook_paid",
+  gclid: "google_paid",
+  ttclid: "tiktok_paid",
+  msclkid: "microsoft_paid",
+}
+
+// Apple truncates campaign tokens longer than this
+const CAMPAIGN_TOKEN_MAX_LENGTH = 40
 
 // Check if user has consented to Facebook Pixel tracking
 const hasPixelConsent = () => {
@@ -10,34 +24,31 @@ const hasPixelConsent = () => {
   return document.cookie.includes("gatsby-gdpr-facebook-pixel=true")
 }
 
+// Check if user has consented to Google Analytics tracking
+const hasAnalyticsConsent = () => {
+  if (typeof document === "undefined") return false
+  return document.cookie.includes("gatsby-gdpr-google-analytics=true")
+}
+
 // Get URL parameters (UTM, click IDs, etc.)
 const getUrlParams = () => {
   if (typeof window === "undefined") return {}
-  
+
   const params = new URLSearchParams(window.location.search)
   const result = {}
-  
-  // UTM parameters
-  const utmParams = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
-  utmParams.forEach(param => {
+
+  UTM_PARAMS.concat(Object.keys(CLICK_ID_SOURCES)).forEach(param => {
     const value = params.get(param)
     if (value) result[param] = value
   })
-  
-  // Ad platform click IDs
-  const clickIds = ["fbclid", "gclid", "ttclid", "msclkid"]
-  clickIds.forEach(param => {
-    const value = params.get(param)
-    if (value) result[param] = value
-  })
-  
+
   return result
 }
 
 // Get stored attribution data (persisted from first visit)
 const getStoredAttribution = () => {
   if (typeof sessionStorage === "undefined") return {}
-  
+
   try {
     const stored = sessionStorage.getItem("attribution_params")
     return stored ? JSON.parse(stored) : {}
@@ -49,14 +60,13 @@ const getStoredAttribution = () => {
 // Store attribution params on first visit (so they persist across pages)
 export const storeAttributionParams = () => {
   if (typeof sessionStorage === "undefined") return
-  
+
   // Only store if not already stored (first touch attribution)
   if (sessionStorage.getItem("attribution_params")) return
-  
+
   const params = getUrlParams()
   if (Object.keys(params).length > 0) {
     sessionStorage.setItem("attribution_params", JSON.stringify(params))
-    console.log("[Tracking] Stored attribution params:", params)
   }
 }
 
@@ -64,7 +74,7 @@ export const storeAttributionParams = () => {
 const getAttributionData = () => {
   const stored = getStoredAttribution()
   const current = getUrlParams()
-  
+
   // Current params override stored (last-touch for click IDs, but keep first-touch UTMs)
   return {
     ...stored,
@@ -76,66 +86,53 @@ const getAttributionData = () => {
   }
 }
 
-// Track a Facebook Pixel standard event
-export const trackEvent = (eventName, params = {}) => {
-  if (!hasPixelConsent()) {
-    console.log(`[Tracking] Skipped ${eventName} - no consent`)
-    return false
-  }
+const sendPixelEvent = (method, eventName, params) => {
+  if (!hasPixelConsent()) return false
+  if (typeof window === "undefined" || !window.fbq) return false
 
-  if (typeof window !== "undefined" && window.fbq) {
-    // Merge attribution data with event params
-    const attribution = getAttributionData()
-    const fullParams = { ...attribution, ...params }
-    
-    window.fbq("track", eventName, fullParams)
-    console.log(`[Tracking] Fired ${eventName}`, fullParams)
-    return true
-  }
-
-  console.log(`[Tracking] Skipped ${eventName} - fbq not available`)
-  return false
+  // Merge attribution data with event params
+  window.fbq(method, eventName, { ...getAttributionData(), ...params })
+  return true
 }
 
+// Track a Facebook Pixel standard event
+export const trackEvent = (eventName, params = {}) =>
+  sendPixelEvent("track", eventName, params)
+
 // Track a custom Facebook Pixel event
-export const trackCustomEvent = (eventName, params = {}) => {
-  if (!hasPixelConsent()) {
-    console.log(`[Tracking] Skipped custom ${eventName} - no consent`)
-    return false
-  }
+export const trackCustomEvent = (eventName, params = {}) =>
+  sendPixelEvent("trackCustom", eventName, params)
 
-  if (typeof window !== "undefined" && window.fbq) {
-    // Merge attribution data with event params
-    const attribution = getAttributionData()
-    const fullParams = { ...attribution, ...params }
-    
-    window.fbq("trackCustom", eventName, fullParams)
-    console.log(`[Tracking] Fired custom ${eventName}`, fullParams)
-    return true
-  }
+// Track a Google Analytics (GA4) event
+export const trackAnalyticsEvent = (eventName, params = {}) => {
+  if (!hasAnalyticsConsent()) return false
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return false
 
-  console.log(`[Tracking] Skipped custom ${eventName} - fbq not available`)
-  return false
+  window.gtag("event", eventName, params)
+  return true
 }
 
 // Common conversion events
 export const trackLead = (params = {}) => trackEvent("Lead", params)
-export const trackAppStoreClick = () => trackCustomEvent("AppStoreClick", { platform: "iOS" })
+export const trackAppStoreClick = () => {
+  trackCustomEvent("AppStoreClick", { platform: "iOS" })
+  trackAnalyticsEvent("app_store_click", { platform: "iOS" })
+}
 export const trackContact = (params = {}) => trackEvent("Contact", params)
 
 // Detect traffic source from referrer
 export const getSourceFromReferrer = () => {
   if (typeof document === "undefined") return null
-  
+
   const referrer = document.referrer.toLowerCase()
   if (!referrer) return "direct"
-  
+
   // Search engines
   if (referrer.includes("google.")) return "google_organic"
   if (referrer.includes("bing.")) return "bing_organic"
   if (referrer.includes("duckduckgo.")) return "duckduckgo_organic"
   if (referrer.includes("yahoo.")) return "yahoo_organic"
-  
+
   // Social media (including link shim domains)
   if (referrer.includes("facebook.") || referrer.includes("fb.") || referrer.includes("l.facebook.") || referrer.includes("lm.facebook.")) return "facebook_organic"
   if (referrer.includes("instagram.") || referrer.includes("l.instagram.") || referrer.includes("lm.instagram.")) return "instagram_organic"
@@ -144,10 +141,10 @@ export const getSourceFromReferrer = () => {
   if (referrer.includes("pinterest.")) return "pinterest_organic"
   if (referrer.includes("linkedin.")) return "linkedin_organic"
   if (referrer.includes("reddit.")) return "reddit_organic"
-  
+
   // Other
   if (referrer.includes("youtube.")) return "youtube_organic"
-  
+
   // Unknown external referrer
   try {
     const url = new URL(referrer)
@@ -157,49 +154,36 @@ export const getSourceFromReferrer = () => {
   }
 }
 
+// Campaign label for one set of attribution params: the UTMs when present,
+// otherwise the paid source implied by an ad click ID
+const campaignTokenFrom = (params) => {
+  // Format: source_medium_campaign
+  const fromUtm = [params.utm_source, params.utm_medium, params.utm_campaign]
+    .filter(Boolean)
+    .join("_")
+  if (fromUtm) return fromUtm
+
+  const clickId = Object.keys(CLICK_ID_SOURCES).find(param => params[param])
+  return clickId ? CLICK_ID_SOURCES[clickId] : ""
+}
+
 // Build App Store URL with campaign tracking
 export const buildAppStoreUrl = (appId, providerToken) => {
   const baseUrl = `https://apps.apple.com/app/apple-store/${appId}`
-  const baseParams = `?pt=${providerToken}&mt=8`
-  
+
   if (typeof window === "undefined") {
     // SSR fallback - no campaign tracking available
-    return `${baseUrl}${baseParams}`
+    return `${baseUrl}?pt=${providerToken}&mt=8`
   }
 
-  const params = new URLSearchParams(window.location.search)
-  
-  // Build campaign token from UTM params (max 40 chars for Apple)
-  const source = params.get("utm_source") || ""
-  const medium = params.get("utm_medium") || ""
-  const campaign = params.get("utm_campaign") || ""
-  
-  // Format: source_medium_campaign (truncated to 40 chars)
-  let campaignToken = [source, medium, campaign]
-    .filter(Boolean)
-    .join("_")
-    .substring(0, 40)
-  
-  // If no UTM params, check for stored attribution
-  if (!campaignToken) {
-    try {
-      const stored = sessionStorage.getItem("attribution_params")
-      if (stored) {
-        const attrs = JSON.parse(stored)
-        campaignToken = [attrs.utm_source, attrs.utm_medium, attrs.utm_campaign]
-          .filter(Boolean)
-          .join("_")
-          .substring(0, 40)
-      }
-    } catch {
-      // Ignore errors
-    }
-  }
-  
-  // If still no campaign token, detect from referrer
-  if (!campaignToken) {
-    campaignToken = getSourceFromReferrer() || "direct"
-  }
-  
+  // Current URL first, then first-touch params stored earlier in the session,
+  // then the referrer
+  const campaignToken = (
+    campaignTokenFrom(getUrlParams()) ||
+    campaignTokenFrom(getStoredAttribution()) ||
+    getSourceFromReferrer() ||
+    "direct"
+  ).substring(0, CAMPAIGN_TOKEN_MAX_LENGTH)
+
   return `${baseUrl}?pt=${providerToken}&ct=${encodeURIComponent(campaignToken)}&mt=8`
 }
