@@ -2,6 +2,11 @@
   command = "npm run build"
   publish = "public"
 
+# Edge function redirecting first-time visitors of / to their browser language
+[[edge_functions]]
+  path = "/"
+  function = "language-redirect"
+
 # Edge function for geo-based consent detection
 [[edge_functions]]
   path = "/*"

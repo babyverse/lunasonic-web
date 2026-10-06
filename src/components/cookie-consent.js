@@ -12,7 +12,12 @@ const getCookie = (name) => {
   return null
 }
 
-const CookieConsentBanner = () => {
+const CookieConsentBanner = ({
+  text = "We use cookies to enhance your experience and analyze site traffic.",
+  learnMore = "Learn more",
+  accept = "Accept",
+  decline = "Decline",
+}) => {
   const location = useLocation()
   const [showBanner, setShowBanner] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
@@ -73,8 +78,8 @@ const CookieConsentBanner = () => {
   return (
     <CookieConsent
       location="bottom"
-      buttonText="Accept"
-      declineButtonText="Decline"
+      buttonText={accept}
+      declineButtonText={decline}
       enableDeclineButton
       onAccept={handleAccept}
       onDecline={handleDecline}
@@ -110,12 +115,12 @@ const CookieConsentBanner = () => {
       }}
       expires={365}
     >
-      We use cookies to enhance your experience and analyze site traffic.{" "}
+      {text}{" "}
       <a
-        href="/privacy"
+        href="/privacy-policy"
         style={{ color: "#BE8B87", textDecoration: "underline" }}
       >
-        Learn more
+        {learnMore}
       </a>
     </CookieConsent>
   )

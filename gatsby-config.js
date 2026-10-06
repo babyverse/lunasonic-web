@@ -4,8 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Lunasonic | Snuggly App",
-    description: "Official website of Snuggly App",
+    title: "Snuggly",
+    description:
+      "Listen to your baby's real heartbeat at home with just your iPhone and headphones — no extra device. Record it, keep it, share it. From around week 22.",
+    siteUrl: "https://www.snugglyapp.com",
   },
   plugins: [
     {
