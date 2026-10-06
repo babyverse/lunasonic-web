@@ -25,12 +25,14 @@ export const useSiteMetadata = () => {
 
 // `pathname` enables the canonical link and og:url; `alternates` is a list of
 // `{ hrefLang, pathname }` for pages that exist in several languages.
+// `socialTitle` replaces the title in link previews (og:title, twitter:title).
 const Seo = ({
   description = '',
   lang = 'en',
   locale,
   meta = [],
   title,
+  socialTitle,
   image,
   pathname,
   alternates = [],
@@ -40,7 +42,7 @@ const Seo = ({
 
   const metaDescription = description || site.description
   const defaultTitle = site.title
-  const socialTitle = title || defaultTitle
+  const shareTitle = socialTitle || title || defaultTitle
   const url = pathname ? abs(pathname) : null
   const imageUrl = image || abs(DEFAULT_IMAGE.path)
 
@@ -67,7 +69,7 @@ const Seo = ({
         },
         {
           property: `og:title`,
-          content: socialTitle,
+          content: shareTitle,
         },
         {
           property: `og:description`,
@@ -87,7 +89,7 @@ const Seo = ({
         },
         {
           name: `twitter:title`,
-          content: socialTitle,
+          content: shareTitle,
         },
         {
           name: `twitter:description`,

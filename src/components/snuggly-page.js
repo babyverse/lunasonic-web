@@ -15,6 +15,9 @@ const ALTERNATES = [
   { hrefLang: 'x-default', pathname: pathForLang(DEFAULT_LANG) },
 ]
 
+// Flatten the inline markup of a translation string (*emphasis*, line breaks)
+const plain = (text) => text.replace(/\*/g, '').replace(/\n/g, ' ')
+
 // Translated <title>/description, canonical + hreflang, and schema.org data
 // describing the app and its FAQ.
 const LocalizedHead = () => {
@@ -52,7 +55,8 @@ const LocalizedHead = () => {
         lang={lang}
         locale={language?.ogLocale}
         title={t('seo.title')}
-        description={t('hero.sub')}
+        socialTitle={plain(t('hero.title'))}
+        description={t('seo.description')}
         pathname={pathForLang(lang)}
         alternates={ALTERNATES}
       />

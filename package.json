@@ -8,7 +8,6 @@
     "url": "https://github.com/contentful/starter-gatsby-blog/issues"
   },
   "dependencies": {
-    "@contentful/rich-text-plain-text-renderer": "^15.12.1",
     "gatsby": "^4.25.2",
     "gatsby-plugin-gdpr-cookies": "^2.0.10",
     "gatsby-plugin-image": "^2.23.1",
@@ -24,8 +23,7 @@
     "react": "^18.0.0",
     "react-cookie-consent": "^10.0.1",
     "react-dom": "^18.0.0",
-    "react-helmet": "^6.1.0",
-    "reading-time": "^2.0.0-1"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "contentful-import": "^8.0.0",
