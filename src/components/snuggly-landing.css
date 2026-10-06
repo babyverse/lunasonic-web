@@ -396,7 +396,6 @@ section { position: relative; }
   aspect-ratio: 300 / 620;
   background: linear-gradient(155deg, #3a2f3f, #241c29);
   border-radius: 46px;
-  padding: 12px;
   box-shadow: var(--shadow-lg), inset 0 0 0 2px rgba(255,255,255,0.04);
 }
 .phone::after { /* side button hint */
@@ -407,16 +406,19 @@ section { position: relative; }
   background: #2a222f;
   border-radius: 3px;
 }
+/* Inset by the bezel width rather than padding + height: 100% — Safari
+   resolves that percentage against the frame's full aspect-ratio height,
+   which pushed the screen out past the bottom of the frame. */
 .phone-screen {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset: 12px;
   background: var(--cream-50);
   border-radius: 36px;
   overflow: hidden;
 }
 .phone-screen img {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
