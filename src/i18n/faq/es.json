@@ -1,0 +1,62 @@
+[
+  {
+    "question": "¿En qué semana de embarazo se recomienda empezar a usar la aplicación?",
+    "answer": "Normalmente recomendamos empezar alrededor de la semana 22, cuando es más probable que se capte claramente el latido del corazón de tu bebé. Antes de esa fecha, puede resultar más difícil oír algo, y eso es totalmente normal."
+  },
+  {
+    "question": "No oigo nada, ¿qué estoy haciendo mal?",
+    "answer": "Probablemente lo estés haciendo todo bien. Intenta quitarle la funda al móvil, sentarte en un lugar muy tranquilo y ajustar ligeramente la posición. Incluso los movimientos más pequeños pueden marcar una gran diferencia. Antes de las semanas 18-20, puede resultar especialmente complicado oír algo."
+  },
+  {
+    "question": "¿Cuáles son los mejores lugares para escuchar los latidos del corazón de tu bebé?",
+    "answer": "Un buen lugar para empezar es justo debajo del ombligo. Desde ahí, intenta mover el teléfono lentamente, poco a poco — incluso uno o dos centímetros pueden cambiar lo que oyes."
+  },
+  {
+    "question": "¿Qué puedo hacer si tengo problemas para escuchar los latidos del corazón?",
+    "answer": "Asegúrate de que el micrófono (junto al puerto de carga) esté en contacto con tu piel e inclina ligeramente el teléfono para que quede cómodo. Sube el volumen y escucha si hay sonidos suaves y rítmicos. Si no oyes nada, levanta el teléfono, muévete un poco e inténtalo de nuevo."
+  },
+  {
+    "question": "¿Por qué oigo principalmente un silbido?",
+    "answer": "A menudo es el sonido de la sangre fluyendo a través de la placenta, lo cual es una excelente señal de que estás en la zona correcta. Intenta mover el teléfono poco a poco hasta que oigas un ritmo más rápido y constante superpuesto por encima."
+  },
+  {
+    "question": "¿Cuál es la frecuencia cardíaca fetal normal?",
+    "answer": "El corazón de un bebé suele latir mucho más rápido que el tuyo, entre 110 y 160 latidos por minuto. Si lo que oyes es más lento, puede que solo sea tu propio pulso."
+  },
+  {
+    "question": "¿Por qué la aplicación no muestra la frecuencia cardíaca ni los latidos por minuto?",
+    "answer": "Hemos decidido no mostrar la frecuencia cardíaca porque eso entra en el ámbito médico. La aplicación está diseñada para ayudarte a conectar con tu bebé, no para proporcionar información médica."
+  },
+  {
+    "question": "¿Va todo bien si no consigo encontrar los latidos del corazón?",
+    "answer": "No poder oírlo no significa que haya ningún problema. La posición de tu bebé, tu cuerpo e incluso la placenta pueden afectar a lo que oyes. Si alguna vez te sientes insegura o preocupada, lo mejor es siempre ponerte en contacto con tu profesional médico."
+  },
+  {
+    "question": "¿Qué pasa si siento que debería poder oír algo pero no lo consigo?",
+    "answer": "Intenta no preocuparte. Incluso los profesionales cualificados a veces necesitan tiempo para encontrar el latido con equipos especializados. Si algo no te parece bien, confía en tu instinto y ponte en contacto con tu profesional médico."
+  },
+  {
+    "question": "¿Esto sustituye al doppler de mi comadrona?",
+    "answer": "No, esta aplicación no es un dispositivo médico. Está pensada para momentos especiales y para crear vínculos afectivos, no para controlar la salud de tu bebé. Si tienes alguna preocupación, tu profesional médico es siempre la persona adecuada a la que acudir."
+  },
+  {
+    "question": "¿Es seguro grabar con frecuencia?",
+    "answer": "Sí. La aplicación solo utiliza el micrófono de tu teléfono; no envía nada al interior de tu cuerpo. Puedes usarla con la frecuencia que desees."
+  },
+  {
+    "question": "¿Debo activar el modo avión cada vez?",
+    "answer": "Te lo recomendamos, simplemente como precaución cuando coloques el teléfono cerca de tu cuerpo."
+  },
+  {
+    "question": "¿Puedo compartir mis grabaciones?",
+    "answer": "Por supuesto. Puedes compartirlas fácilmente con tus seres queridos a través de Mensajes, correo electrónico, AirDrop o guardarlas en tus archivos."
+  },
+  {
+    "question": "¿Dónde se almacenan mis grabaciones?",
+    "answer": "Tus grabaciones permanecen a salvo en tu dispositivo. No se sube ni se comparte nada a menos que tú decidas hacerlo."
+  },
+  {
+    "question": "¿Cómo cambio la fecha de parto o dejo de seguir el embarazo?",
+    "answer": "Toca la insignia de la semana, arriba a la izquierda en la pantalla de escucha, para abrir Ajustes. Allí puedes cambiar la fecha de parto, configurar recordatorios o dejar de seguir el embarazo. Después, ese mismo botón muestra una rueda dentada."
+  }
+]

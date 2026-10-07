@@ -46,13 +46,18 @@ export const rich = (text) => {
 // are preserved so UTM/attribution params survive the switch. The choice is
 // remembered in a cookie that netlify/edge-functions/language-redirect.js
 // reads, so picking English is not undone by the browser-language redirect.
-export const I18nProvider = ({ lang = DEFAULT_LANG, children }) => {
+// `pathFor` maps a language code to the current page's URL in that language.
+export const I18nProvider = ({
+  lang = DEFAULT_LANG,
+  pathFor = pathForLang,
+  children,
+}) => {
   const setLang = (code) => {
     if (code === lang) return
     document.cookie = `lang_pref=${code}; path=/; max-age=31536000; SameSite=Lax`
     const search = typeof window !== 'undefined' ? window.location.search : ''
     const hash = typeof window !== 'undefined' ? window.location.hash : ''
-    navigate(pathForLang(code) + search + hash)
+    navigate(pathFor(code) + search + hash)
   }
 
   // Look up a key in the active locale, falling back to English, then the key.

@@ -70,6 +70,11 @@
   --rose-500: #C4958F;
   --rose-600: #BE8B87;
   --rose-700: #9E616A;
+  /* Rose shades for text: the palette's roses are decorative and fall short
+     of WCAG AA contrast, so text on cream uses --rose-text (4.6:1+) and small
+     text on mauve uses --rose-200 (4.9:1). */
+  --rose-text: #965A64;
+  --rose-200: #E6C8C2;
 
   /* deep accents */
   --mauve-700: #634D5D;
@@ -138,7 +143,7 @@ body {
    classes further down (.eyebrow, .hero-sub, …) are not overridden. */
 .snuggly-page :where(p) { margin: 0; text-wrap: pretty; }
 
-.snuggly-page a { color: var(--rose-700); text-decoration: none; }
+.snuggly-page a { color: var(--rose-text); text-decoration: none; }
 .snuggly-page a:hover { color: var(--plum-900); }
 
 .snuggly-page em { font-style: italic; }
@@ -158,7 +163,7 @@ section { position: relative; }
   font-size: 0.74rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--rose-600);
+  color: var(--rose-text);
   margin: 0 0 18px;
   display: flex;
   align-items: center;
@@ -330,7 +335,7 @@ section { position: relative; }
   font-size: clamp(2.6rem, 6.4vw, 4.4rem);
   letter-spacing: -0.025em;
 }
-.hero-copy h1 em { color: var(--rose-600); }
+.hero-copy h1 em { color: var(--rose-text); }
 .hero-copy .hero-sub {
   margin: 26px 0 34px;
   font-size: clamp(1.1rem, 1.8vw, 1.32rem);
@@ -474,7 +479,7 @@ section { position: relative; }
   color: var(--mauve-700);
   letter-spacing: -0.015em;
 }
-.promise blockquote em { color: var(--rose-600); }
+.promise blockquote em { color: var(--rose-text); }
 .promise .sig {
   margin-top: 34px;
   font-size: 0.95rem;
@@ -502,7 +507,7 @@ section { position: relative; }
 .step-num {
   width: 46px; height: 46px;
   border-radius: 50%;
-  background: var(--rose-600);
+  background: var(--rose-text);
   color: #fff;
   font-family: var(--serif);
   font-size: 1.4rem;
@@ -518,7 +523,7 @@ section { position: relative; }
    ============================================================ */
 .science { background: var(--mauve-700); color: var(--cream-100); overflow: hidden; }
 .science h2, .science h3 { color: var(--cream-50); }
-.science .eyebrow { color: var(--rose-300); }
+.science .eyebrow { color: var(--rose-200); }
 .science .eyebrow::before { background: var(--rose-300); }
 .science-grid {
   display: grid;
@@ -553,7 +558,7 @@ section { position: relative; }
 }
 .science-viz .vlabel {
   font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--rose-300); font-weight: 700; margin-bottom: 18px;
+  color: var(--rose-200); font-weight: 700; margin-bottom: 18px;
 }
 .science-viz .waveform { height: 90px; }
 /* Heartbeat bars thin out on narrow screens so the whole shape stays visible. */
@@ -601,7 +606,7 @@ section { position: relative; }
 .feature .templates span {
   font-size: 0.76rem;
   font-weight: 600;
-  color: var(--rose-700);
+  color: var(--rose-text);
   background: var(--cream-100);
   border: 1px solid var(--cream-300);
   padding: 5px 11px;
@@ -613,7 +618,7 @@ section { position: relative; }
    CTA band
    ============================================================ */
 .cta-band {
-  background: linear-gradient(150deg, var(--rose-600), var(--rose-700));
+  background: linear-gradient(150deg, var(--rose-700), var(--rose-text));
   color: #fff;
   text-align: center;
   padding: clamp(56px, 8vw, 96px) 0;
@@ -643,7 +648,7 @@ section { position: relative; }
   flex: none;
   font-family: var(--serif);
   font-size: 1.1rem;
-  color: var(--rose-600);
+  color: var(--rose-text);
   width: 38px; height: 38px;
   border-radius: 50%;
   border: 1.5px solid var(--rose-400);
@@ -708,7 +713,7 @@ section { position: relative; }
 .disclaimer .badge-med {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
-  font-weight: 700; color: var(--rose-700);
+  font-weight: 700; color: var(--rose-text);
   background: var(--cream-200);
   border: 1px solid var(--cream-300);
   padding: 8px 16px; border-radius: 999px;

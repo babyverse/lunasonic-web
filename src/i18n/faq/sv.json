@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Vilken graviditetsvecka rekommenderas för att börja använda appen?",
+    "answer": "Vi rekommenderar vanligtvis att man börjar runt vecka 22, då det är större chans att barnets hjärtslag kan höras tydligt. Innan dess kan det vara svårare att höra något – och det är helt normalt."
+  },
+  {
+    "question": "Jag hör ingenting – vad gör jag för fel?",
+    "answer": "Du gör troligen allt rätt. Försök ta bort mobilskalet, sätta dig i en mycket tyst miljö och justera positionen lite. Även små rörelser kan göra stor skillnad. Före vecka 18–20 kan det vara särskilt svårt att höra någonting alls."
+  },
+  {
+    "question": "Vilka är de bästa platserna för att höra ditt barns hjärtslag?",
+    "answer": "En bra plats att börja på är precis under naveln. Därifrån kan du försöka flytta telefonen långsamt i små steg – även en eller två centimeter kan förändra vad du hör."
+  },
+  {
+    "question": "Vad kan jag göra om jag har svårt att höra hjärtslagen?",
+    "answer": "Se till att mikrofonen (bredvid laddningsporten) vidrör din hud och luta telefonen något så att den ligger bekvämt. Höj volymen och lyssna efter mjuka, rytmiska ljud. Om du inte hör något, lyft telefonen, flytta dig lite och försök igen."
+  },
+  {
+    "question": "Varför hör jag mest ett susande ljud?",
+    "answer": "Det är ofta ljudet av blod som flödar genom moderkakan – vilket är ett bra tecken på att du är i rätt område. Försök flytta telefonen lite i taget tills du hör en snabbare, stadig rytm ovanpå det."
+  },
+  {
+    "question": "Vad är en normal fosterhjärtfrekvens?",
+    "answer": "Ett barns hjärta slår vanligtvis mycket snabbare än ditt – omkring 110 till 160 slag i minuten. Om det du hör är långsammare kan det bara vara din egen puls."
+  },
+  {
+    "question": "Varför visar appen inte hjärtfrekvens eller BPM?",
+    "answer": "Vi har valt att inte visa hjärtfrekvensen eftersom det rör sig in på medicinskt område. Appen är utformad för att hjälpa dig att knyta an till ditt barn, inte för att ge medicinsk information."
+  },
+  {
+    "question": "Är allt okej om jag inte kan hitta hjärtslagen?",
+    "answer": "Att du inte hör det betyder inte att något är fel. Barnets position, din kropp och till och med moderkakan kan alla påverka vad du hör. Om du någonsin känner dig osäker eller orolig är det alltid bäst att kontakta din vårdgivare."
+  },
+  {
+    "question": "Vad gör jag om jag känner att jag borde kunna höra något men inte kan det?",
+    "answer": "Försök att inte oroa dig. Även utbildade proffs behöver ibland tid på sig för att hitta hjärtslagen med specialutrustning. Om något inte känns rätt, lita på din instinkt och kontakta din vårdgivare."
+  },
+  {
+    "question": "Ersätter den här min barnmorskas doppler?",
+    "answer": "Nej – den här appen är ingen medicinsk utrustning. Den är avsedd för speciella stunder och att skapa en anknytning, inte för att kontrollera ditt barns hälsa. Om du har några farhågor är din vårdgivare alltid rätt person att kontakta."
+  },
+  {
+    "question": "Är det säkert att spela in ofta?",
+    "answer": "Ja. Appen använder bara telefonens mikrofon – den sänder inte in något i din kropp. Du kan använda den så ofta du vill."
+  },
+  {
+    "question": "Bör jag använda flygläge varje gång?",
+    "answer": "Vi rekommenderar det, bara som en enkel försiktighetsåtgärd när du placerar telefonen nära kroppen."
+  },
+  {
+    "question": "Kan jag dela mina inspelningar?",
+    "answer": "Självklart. Du kan enkelt dela dem med nära och kära via Meddelanden, e-post, AirDrop eller spara dem i dina filer."
+  },
+  {
+    "question": "Var lagras mina inspelningar?",
+    "answer": "Dina inspelningar förvaras säkert på din enhet. Ingenting laddas upp eller delas om du inte väljer att göra det."
+  },
+  {
+    "question": "Hur ändrar jag beräknat datum eller slutar följa graviditeten?",
+    "answer": "Tryck på veckomärket uppe till vänster på lyssningsskärmen för att öppna Inställningar. Där kan du ändra beräknat datum, ställa in påminnelser eller sluta följa graviditeten. Efteråt visar samma knapp ett kugghjul."
+  }
+]

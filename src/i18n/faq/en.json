@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the recommended week of pregnancy to start using the app?",
+    "answer": "We usually recommend starting around week 22, when your baby's heartbeat is more likely to be picked up clearly. Earlier than that, it can be harder to hear anything — and that's completely normal."
+  },
+  {
+    "question": "I can't hear anything — what am I doing wrong?",
+    "answer": "You're likely doing everything right. Try removing your phone case, sitting in a very quiet space, and adjusting the position slightly. Even small movements can make a big difference. Before 18–20 weeks, it can be especially tricky to hear anything at all."
+  },
+  {
+    "question": "What are the best locations to hear your baby's heartbeat?",
+    "answer": "A good place to start is just below your belly button. From there, try moving the phone slowly in small steps — even a centimeter or two can change what you hear."
+  },
+  {
+    "question": "What can I do if I'm having trouble hearing the heartbeat?",
+    "answer": "Make sure the microphone (next to your charging port) is touching your skin, and tilt your phone slightly so it sits comfortably. Turn up the volume and listen for soft, rhythmic sounds. If you don't hear anything, lift the phone, move slightly, and try again."
+  },
+  {
+    "question": "Why do I mostly hear a whooshing sound?",
+    "answer": "That's often the sound of blood flowing through the placenta — which is a great sign that you're in the right area. Try moving the phone just a little at a time until you hear a faster, steady rhythm layered on top."
+  },
+  {
+    "question": "What's a normal fetal heart rate?",
+    "answer": "A baby's heart usually beats much faster than yours — around 110 to 160 beats per minute. If what you're hearing is slower, it may just be your own pulse."
+  },
+  {
+    "question": "Why doesn't the app show heart rate or BPM?",
+    "answer": "We've chosen not to display heart rate because that moves into medical territory. The app is designed to help you connect with your baby, not to provide medical information."
+  },
+  {
+    "question": "Is everything okay if I can't find the heartbeat?",
+    "answer": "Not being able to hear it doesn't mean anything is wrong. Your baby's position, your body, and even the placenta can all affect what you hear. If you ever feel unsure or worried, it's always best to reach out to your healthcare provider."
+  },
+  {
+    "question": "What if I feel like I should be able to hear something but can't?",
+    "answer": "Try not to worry. Even trained professionals sometimes need time to find the heartbeat with specialized equipment. If something doesn't feel right, trust your instincts and contact your provider."
+  },
+  {
+    "question": "Does this replace my midwife's doppler?",
+    "answer": "No — this app isn't a medical device. It's meant for special moments and bonding, not for checking on your baby's health. If you have any concerns, your provider is always the right person to contact."
+  },
+  {
+    "question": "Is it safe to record often?",
+    "answer": "Yes. The app simply uses your phone's microphone — it doesn't send anything into your body. You can use it as often as you like."
+  },
+  {
+    "question": "Should I use Airplane Mode every time?",
+    "answer": "We recommend it, just as a simple precaution when placing your phone close to your body."
+  },
+  {
+    "question": "Can I share my recordings?",
+    "answer": "Of course. You can easily share them with loved ones through Messages, email, AirDrop, or save them to your files."
+  },
+  {
+    "question": "Where are my recordings stored?",
+    "answer": "Your recordings stay safely on your device. Nothing is uploaded or shared unless you choose to do so."
+  },
+  {
+    "question": "How do I change my due date or stop tracking?",
+    "answer": "Tap the week badge at the top left of the listening screen to open Settings. There you can change your due date, set reminders or stop tracking. After you stop, the same button shows a cog."
+  }
+]

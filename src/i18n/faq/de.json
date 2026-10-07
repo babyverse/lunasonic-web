@@ -1,0 +1,62 @@
+[
+  {
+    "question": "In welcher Schwangerschaftswoche wird empfohlen, mit der Nutzung der App zu beginnen?",
+    "answer": "Wir empfehlen normalerweise, etwa in der 22. Woche zu beginnen, da der Herzschlag deines Babys dann wahrscheinlich deutlicher zu hören ist. Vorher kann es schwieriger sein, etwas zu hören – und das ist völlig normal."
+  },
+  {
+    "question": "Ich höre nichts – was mache ich falsch?",
+    "answer": "Wahrscheinlich machst du alles richtig. Versuche, deine Handyhülle abzunehmen, setz dich an einen sehr ruhigen Ort und passe die Position leicht an. Schon kleine Bewegungen können einen großen Unterschied machen. Vor der 18.–20. Woche kann es besonders schwierig sein, überhaupt etwas zu hören."
+  },
+  {
+    "question": "Wo hört man den Herzschlag des Babys am besten?",
+    "answer": "Ein guter Ausgangspunkt ist direkt unterhalb deines Bauchnabels. Versuche von dort aus, das Handy langsam in kleinen Schritten zu bewegen – schon ein oder zwei Zentimeter können einen Unterschied machen."
+  },
+  {
+    "question": "Was kann ich tun, wenn ich Schwierigkeiten habe, den Herzschlag zu hören?",
+    "answer": "Stelle sicher, dass das Mikrofon (neben dem Ladeanschluss) deine Haut berührt, und neige dein Handy leicht, damit es bequem aufliegt. Erhöhe die Lautstärke und achte auf leise, rhythmische Geräusche. Wenn du nichts hörst, hebe das Handy an, bewege dich leicht und versuche es erneut."
+  },
+  {
+    "question": "Warum höre ich meistens ein rauschendes Geräusch?",
+    "answer": "Das ist oft das Geräusch des Blutes, das durch die Plazenta fließt – ein gutes Zeichen dafür, dass du an der richtigen Stelle bist. Versuche, das Telefon jedes Mal ein kleines Stückchen zu verschieben, bis du einen schnelleren, gleichmäßigen Rhythmus darüber hörst."
+  },
+  {
+    "question": "Was ist eine normale Herzfrequenz des Fötus?",
+    "answer": "Das Herz eines Babys schlägt normalerweise viel schneller als deins – etwa 110 bis 160 Schläge pro Minute. Wenn das, was du hörst, langsamer ist, könnte es sich einfach um deinen eigenen Puls handeln."
+  },
+  {
+    "question": "Warum zeigt die App keine Herzfrequenz oder BPM an?",
+    "answer": "Wir haben uns entschieden, die Herzfrequenz nicht anzuzeigen, da dies in den medizinischen Bereich fällt. Die App soll dir helfen, eine Verbindung zu deinem Baby aufzubauen, und nicht medizinische Informationen liefern."
+  },
+  {
+    "question": "Ist alles in Ordnung, wenn ich den Herzschlag nicht finden kann?",
+    "answer": "Wenn du ihn nicht hören kannst, bedeutet das nicht, dass etwas nicht in Ordnung ist. Die Position deines Babys, dein Körper und sogar die Plazenta können beeinflussen, was du hörst. Wenn du dir unsicher bist oder dir Sorgen machst, wende dich am besten an deinen Arzt oder deine Ärztin."
+  },
+  {
+    "question": "Was ist, wenn ich das Gefühl habe, dass ich etwas hören sollte, es aber nicht kann?",
+    "answer": "Versuche, dir keine Sorgen zu machen. Selbst geschulte Fachleute brauchen manchmal Zeit, um den Herzschlag mit Spezialgeräten zu finden. Wenn sich etwas nicht richtig anfühlt, vertraue deinem Instinkt und wende dich an deinen Arzt oder deine Ärztin."
+  },
+  {
+    "question": "Ersetzt das den Doppler meiner Hebamme?",
+    "answer": "Nein – diese App ist kein medizinisches Gerät. Sie ist für besondere Momente und die Bindung gedacht, nicht zur Überprüfung der Gesundheit deines Babys. Wenn du Bedenken hast, ist dein Arzt immer der richtige Ansprechpartner."
+  },
+  {
+    "question": "Ist es sicher, häufig Aufnahmen zu machen?",
+    "answer": "Ja. Die App nutzt lediglich das Mikrofon deines Handys – sie sendet nichts in deinen Körper. Du kannst sie so oft nutzen, wie du möchtest."
+  },
+  {
+    "question": "Sollte ich jedes Mal den Flugmodus aktivieren?",
+    "answer": "Wir empfehlen es, einfach als Vorsichtsmaßnahme, wenn du dein Handy nah am Körper hältst."
+  },
+  {
+    "question": "Kann ich meine Aufnahmen teilen?",
+    "answer": "Natürlich. Du kannst sie ganz einfach über Nachrichten, E-Mail oder AirDrop mit deinen Lieben teilen oder in deinen Dateien speichern."
+  },
+  {
+    "question": "Wo werden meine Aufnahmen gespeichert?",
+    "answer": "Deine Aufnahmen bleiben sicher auf deinem Gerät gespeichert. Es wird nichts hochgeladen oder geteilt, es sei denn, du entscheidest dich dafür."
+  },
+  {
+    "question": "Wie ändere ich meinen Geburtstermin oder beende das Schwangerschafts-Tracking?",
+    "answer": "Tippe oben links auf dem Hörbildschirm auf das Wochen-Abzeichen, um die Einstellungen zu öffnen. Dort kannst du deinen Geburtstermin ändern, Erinnerungen einrichten oder das Schwangerschafts-Tracking beenden. Danach zeigt dieselbe Taste ein Zahnrad."
+  }
+]

@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Seo, { useSiteMetadata } from './seo'
-import SnugglyLanding, { APP_ID, FAQ_ITEMS } from './snuggly-landing'
+import SnugglyLanding, { FAQ_ITEMS } from './snuggly-landing'
+import { APP_ID } from '../app-store'
 import CookieConsentBanner from './cookie-consent'
 import { storeAttributionParams } from '../utils/tracking'
 import { I18nProvider, useI18n } from '../i18n/I18nContext'
@@ -69,19 +70,6 @@ const LocalizedHead = () => {
   )
 }
 
-const LocalizedCookieBanner = () => {
-  const { t } = useI18n()
-
-  return (
-    <CookieConsentBanner
-      text={t('cookie.text')}
-      learnMore={t('cookie.learnMore')}
-      accept={t('cookie.accept')}
-      decline={t('cookie.decline')}
-    />
-  )
-}
-
 // Full landing page for a single locale. Used directly by the English home
 // page (`/`) and by the generated localized routes (`/de/`, `/pt/`, …) via the
 // localized-landing template.
@@ -95,7 +83,7 @@ const SnugglyPage = ({ lang = DEFAULT_LANG }) => {
     <I18nProvider lang={lang}>
       <LocalizedHead />
       <SnugglyLanding />
-      <LocalizedCookieBanner />
+      <CookieConsentBanner />
     </I18nProvider>
   )
 }

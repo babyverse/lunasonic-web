@@ -8,12 +8,19 @@ const LANDING_LOCALES = ['es', 'de', 'fr', 'pt', 'nl', 'sv', 'no', 'da']
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Localized landing pages: /es/, /de/, /pt/, … (the home page `/` is English).
+  // Localized landing and support pages: /es/, /es/support/, /de/, … (the
+  // English versions are src/pages/index.js and src/pages/support.js).
   const landing = path.resolve('./src/templates/localized-landing.js')
+  const support = path.resolve('./src/templates/localized-support.js')
   LANDING_LOCALES.forEach((lang) => {
     createPage({
       path: `/${lang}/`,
       component: landing,
+      context: { lang },
+    })
+    createPage({
+      path: `/${lang}/support/`,
+      component: support,
       context: { lang },
     })
   })
@@ -23,7 +30,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(filter: { frontmatter: { slug: { ne: null } } }) {
+        allMarkdownRemark {
           nodes {
             id
             frontmatter {
@@ -44,8 +51,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Legal pages from src/files (/privacy-policy/, /terms-and-conditions/).
-  // Only markdown with a slug gets a page: Contentful's long-text fields are
-  // markdown nodes too and have none.
   result.data.allMarkdownRemark.nodes.forEach((node) => {
     createPage({
       path: `${node.frontmatter.slug.replace(/\/$/, '')}/`,

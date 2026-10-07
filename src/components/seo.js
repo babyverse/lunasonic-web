@@ -2,6 +2,8 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import { APP_ID } from '../app-store'
+
 // Social preview used by every page that does not pass its own image.
 const DEFAULT_IMAGE = { path: '/og-image.jpg', width: 1200, height: 630 }
 
@@ -62,6 +64,11 @@ const Seo = ({
         {
           name: `theme-color`,
           content: `#FFF4EA`,
+        },
+        {
+          // Smart App Banner in iOS Safari
+          name: `apple-itunes-app`,
+          content: `app-id=${APP_ID.replace(/^id/, '')}`,
         },
         {
           property: `og:site_name`,
