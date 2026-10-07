@@ -1,0 +1,62 @@
+[
+  {
+    "question": "I hvilken graviditetsuge anbefales det at begynde at bruge appen?",
+    "answer": "Vi anbefaler normalt at starte omkring uge 22, hvor der er større sandsynlighed for, at dit barns hjerteslag kan opfanges tydeligt. Før det kan det være sværere at høre noget – og det er helt normalt."
+  },
+  {
+    "question": "Jeg kan ikke høre noget – hvad gør jeg forkert?",
+    "answer": "Du gør sandsynligvis alt rigtigt. Prøv at fjerne din telefoncover, sæt dig i et meget stille rum og juster positionen en smule. Selv små bevægelser kan gøre en stor forskel. Før 18–20 uger kan det være særligt svært at høre noget som helst."
+  },
+  {
+    "question": "Hvor er de bedste steder at høre dit barns hjerteslag?",
+    "answer": "Et godt sted at starte er lige under navlen. Derfra kan du prøve at flytte telefonen langsomt i små trin – selv en centimeter eller to kan ændre det, du hører."
+  },
+  {
+    "question": "Hvad kan jeg gøre, hvis jeg har svært ved at høre hjerteslaget?",
+    "answer": "Sørg for, at mikrofonen (ved siden af opladningsporten) rører din hud, og vip telefonen let, så den ligger behageligt. Skru op for lydstyrken, og lyt efter bløde, rytmiske lyde. Hvis du ikke hører noget, løft telefonen, flyt dig lidt, og prøv igen."
+  },
+  {
+    "question": "Hvorfor hører jeg mest en susende lyd?",
+    "answer": "Det er ofte lyden af blod, der strømmer gennem moderkagen – hvilket er et godt tegn på, at du er i det rigtige område. Prøv at flytte telefonen lidt ad gangen, indtil du hører en hurtigere, jævn rytme over den susende lyd."
+  },
+  {
+    "question": "Hvad er en normal fosterhjertefrekvens?",
+    "answer": "Et barns hjerte slår normalt meget hurtigere end dit – omkring 110 til 160 slag i minuttet. Hvis det, du hører, er langsommere, kan det bare være din egen puls."
+  },
+  {
+    "question": "Hvorfor viser appen ikke hjertefrekvens eller BPM?",
+    "answer": "Vi har valgt ikke at vise hjertefrekvensen, da det bevæger sig ind på medicinsk område. Appen er designet til at hjælpe dig med at få kontakt til din baby, ikke til at give medicinsk information."
+  },
+  {
+    "question": "Er alt i orden, hvis jeg ikke kan finde hjerteslaget?",
+    "answer": "At du ikke kan høre det, betyder ikke, at der er noget galt. Dit barns position, din krop og endda moderkagen kan alle påvirke, hvad du hører. Hvis du nogensinde føler dig usikker eller bekymret, er det altid bedst at kontakte din sundhedsperson."
+  },
+  {
+    "question": "Hvad hvis jeg føler, at jeg burde kunne høre noget, men ikke kan?",
+    "answer": "Prøv ikke at bekymre dig. Selv uddannede fagfolk har nogle gange brug for tid til at finde hjerteslaget med specialudstyr. Hvis noget ikke føles rigtigt, så stol på din intuition og kontakt din sundhedsperson."
+  },
+  {
+    "question": "Er dette en erstatning for min jordemors doppler?",
+    "answer": "Nej — denne app er ikke et medicinsk udstyr. Den er beregnet til særlige øjeblikke og til at skabe bånd, ikke til at kontrollere dit barns helbred. Hvis du har nogen bekymringer, er din sundhedsperson altid den rette at kontakte."
+  },
+  {
+    "question": "Er det sikkert at optage ofte?",
+    "answer": "Ja. Appen bruger blot din telefons mikrofon — den sender ikke noget ind i din krop. Du kan bruge den så ofte, du vil."
+  },
+  {
+    "question": "Bør jeg bruge flytilstand hver gang?",
+    "answer": "Vi anbefaler det, blot som en simpel sikkerhedsforanstaltning, når du placerer din telefon tæt på din krop."
+  },
+  {
+    "question": "Kan jeg dele mine optagelser?",
+    "answer": "Selvfølgelig. Du kan nemt dele dem med dine kære via Beskeder, e-mail, AirDrop eller gemme dem i dine filer."
+  },
+  {
+    "question": "Hvor gemmes mine optagelser?",
+    "answer": "Dine optagelser forbliver sikkert på din enhed. Intet uploades eller deles, medmindre du vælger at gøre det."
+  },
+  {
+    "question": "Hvordan skifter jeg termindato eller stopper med at følge graviditeten?",
+    "answer": "Tryk på uge-mærket øverst til venstre på lytteskærmen for at åbne Indstillinger. Der kan du skifte termindato, indstille påmindelser eller stoppe med at følge graviditeten. Når du er stoppet, viser den samme knap et tandhjul."
+  }
+]

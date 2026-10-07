@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Hvilken svangerskapsuke anbefales det å begynne å bruke appen?",
+    "answer": "Vi anbefaler vanligvis å begynne rundt uke 22, da det er større sannsynlighet for at babyens hjerteslag kan oppfanges tydelig. Før det kan det være vanskeligere å høre noe – og det er helt normalt."
+  },
+  {
+    "question": "Jeg hører ingenting – hva gjør jeg galt?",
+    "answer": "Du gjør sannsynligvis alt riktig. Prøv å ta av telefonvesken, sette deg på et veldig stille sted og justere posisjonen litt. Selv små bevegelser kan gjøre en stor forskjell. Før uke 18–20 kan det være spesielt vanskelig å høre noe i det hele tatt."
+  },
+  {
+    "question": "Hva er de beste stedene å høre babyens hjerteslag?",
+    "answer": "Et godt sted å starte er rett under navlen. Derfra kan du prøve å bevege telefonen sakte i små trinn – selv en centimeter eller to kan endre det du hører."
+  },
+  {
+    "question": "Hva kan jeg gjøre hvis jeg har problemer med å høre hjerteslaget?",
+    "answer": "Sørg for at mikrofonen (ved siden av ladeporten) berører huden din, og vipp telefonen litt slik at den ligger komfortabelt. Skru opp volumet og lytt etter myke, rytmiske lyder. Hvis du ikke hører noe, løft telefonen, flytt deg litt, og prøv igjen."
+  },
+  {
+    "question": "Hvorfor hører jeg for det meste en susende lyd?",
+    "answer": "Det er ofte lyden av blod som strømmer gjennom morkaken – noe som er et godt tegn på at du er i riktig område. Prøv å flytte telefonen litt av gangen til du hører en raskere, jevn rytme lagt på toppen."
+  },
+  {
+    "question": "Hva er en normal fosterhjertefrekvens?",
+    "answer": "Et barns hjerte slår vanligvis mye raskere enn ditt – rundt 110 til 160 slag per minutt. Hvis det du hører er langsommere, kan det bare være din egen puls."
+  },
+  {
+    "question": "Hvorfor viser ikke appen hjertefrekvens eller BPM?",
+    "answer": "Vi har valgt å ikke vise hjertefrekvensen fordi det beveger seg inn på medisinsk territorium. Appen er designet for å hjelpe deg med å få kontakt med babyen din, ikke for å gi medisinsk informasjon."
+  },
+  {
+    "question": "Er alt i orden hvis jeg ikke finner hjerteslagene?",
+    "answer": "At du ikke kan høre det, betyr ikke at noe er galt. Babyens stilling, kroppen din og til og med morkaken kan alle påvirke hva du hører. Hvis du noen gang føler deg usikker eller bekymret, er det alltid best å ta kontakt med helsepersonell."
+  },
+  {
+    "question": "Hva hvis jeg føler at jeg burde kunne høre noe, men ikke gjør det?",
+    "answer": "Prøv å ikke bekymre deg. Selv utdannede fagpersoner trenger noen ganger tid på å finne hjerteslagene med spesialisert utstyr. Hvis noe ikke føles riktig, stol på instinktene dine og kontakt legen din."
+  },
+  {
+    "question": "Er dette en erstatning for jordmorens doppler?",
+    "answer": "Nei – denne appen er ikke et medisinsk utstyr. Den er ment for spesielle øyeblikk og for å knytte bånd, ikke for å sjekke babyens helse. Hvis du har noen bekymringer, er legen din alltid den rette å kontakte."
+  },
+  {
+    "question": "Er det trygt å ta opptak ofte?",
+    "answer": "Ja. Appen bruker bare mikrofonen på telefonen din — den sender ikke noe inn i kroppen din. Du kan bruke den så ofte du vil."
+  },
+  {
+    "question": "Bør jeg bruke flymodus hver gang?",
+    "answer": "Vi anbefaler det, bare som en enkel forholdsregel når du holder telefonen nær kroppen din."
+  },
+  {
+    "question": "Kan jeg dele opptakene mine?",
+    "answer": "Selvsagt. Du kan enkelt dele dem med dine nærmeste via Meldinger, e-post, AirDrop eller lagre dem i filene dine."
+  },
+  {
+    "question": "Hvor lagres opptakene mine?",
+    "answer": "Opptakene dine forblir trygt på enheten din. Ingenting lastes opp eller deles med mindre du velger å gjøre det."
+  },
+  {
+    "question": "Hvordan endrer jeg termin eller slutter å følge graviditeten?",
+    "answer": "Trykk på uke-merket øverst til venstre på lytteskjermen for å åpne Innstillinger. Der kan du endre termin, stille inn påminnelser eller slutte å følge graviditeten. Etterpå viser den samme knappen et tannhjul."
+  }
+]

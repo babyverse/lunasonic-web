@@ -3,6 +3,8 @@ import CookieConsent, { getCookieConsentValue } from "react-cookie-consent"
 import { useLocation } from "@reach/router"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 
+import { useI18n } from "../i18n/I18nContext"
+
 // Helper to get cookie value
 const getCookie = (name) => {
   if (typeof document === "undefined") return null
@@ -12,12 +14,8 @@ const getCookie = (name) => {
   return null
 }
 
-const CookieConsentBanner = ({
-  text = "We use cookies to enhance your experience and analyze site traffic.",
-  learnMore = "Learn more",
-  accept = "Accept",
-  decline = "Decline",
-}) => {
+const CookieConsentBanner = () => {
+  const { t } = useI18n()
   const location = useLocation()
   const [showBanner, setShowBanner] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
@@ -78,12 +76,15 @@ const CookieConsentBanner = ({
   return (
     <CookieConsent
       location="bottom"
-      buttonText={accept}
-      declineButtonText={decline}
+      buttonText={t('cookie.accept')}
+      declineButtonText={t('cookie.decline')}
       enableDeclineButton
       onAccept={handleAccept}
       onDecline={handleDecline}
       cookieName="gatsby-gdpr-consent"
+      // The library's default content box has a 300px minimum, which overflows
+      // on narrow phones.
+      contentStyle={{ flex: "1 1 220px", margin: "8px 0" }}
       style={{
         background: "#FFF4EA",
         padding: "16px 24px",
@@ -94,7 +95,7 @@ const CookieConsentBanner = ({
         boxShadow: "0 -2px 10px rgba(0, 0, 0, 0.05)",
       }}
       buttonStyle={{
-        background: "#BE8B87",
+        background: "#965A64",
         color: "#ffffff",
         fontSize: "14px",
         padding: "10px 24px",
@@ -105,8 +106,8 @@ const CookieConsentBanner = ({
       }}
       declineButtonStyle={{
         background: "transparent",
-        border: "1px solid #BE8B87",
-        color: "#BE8B87",
+        border: "1px solid #965A64",
+        color: "#965A64",
         fontSize: "14px",
         padding: "10px 24px",
         borderRadius: "6px",
@@ -115,12 +116,12 @@ const CookieConsentBanner = ({
       }}
       expires={365}
     >
-      {text}{" "}
+      {t('cookie.text')}{" "}
       <a
         href="/privacy-policy"
-        style={{ color: "#BE8B87", textDecoration: "underline" }}
+        style={{ color: "#965A64", textDecoration: "underline" }}
       >
-        {learnMore}
+        {t('cookie.learnMore')}
       </a>
     </CookieConsent>
   )

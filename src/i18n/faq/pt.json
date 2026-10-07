@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Qual é a semana de gravidez recomendada para começar a usar o aplicativo?",
+    "answer": "Normalmente, recomendamos começar por volta da 22ª semana, quando é mais provável que os batimentos cardíacos do bebê sejam captados com clareza. Antes disso, pode ser mais difícil ouvir alguma coisa — e isso é completamente normal."
+  },
+  {
+    "question": "Não consigo ouvir nada — o que estou fazendo de errado?",
+    "answer": "Provavelmente você está fazendo tudo certo. Tente tirar a capa do telefone, sentar-se em um local bem silencioso e ajustar um pouco a posição. Mesmo pequenos movimentos podem fazer uma grande diferença. Antes das 18–20 semanas, pode ser especialmente difícil ouvir qualquer coisa."
+  },
+  {
+    "question": "Quais são os melhores locais para ouvir os batimentos cardíacos do seu bebê?",
+    "answer": "Um bom lugar para começar é logo abaixo do umbigo. A partir daí, tente mover o telefone lentamente, em pequenos passos — mesmo um ou dois centímetros podem mudar o que você ouve."
+  },
+  {
+    "question": "O que posso fazer se estiver com dificuldade para ouvir os batimentos cardíacos?",
+    "answer": "Certifique-se de que o microfone (próximo à porta de carregamento) esteja em contato com a pele e incline levemente o telefone para que ele fique confortável. Aumente o volume e preste atenção a sons suaves e rítmicos. Se você não ouvir nada, levante o telefone, mova-se um pouco e tente novamente."
+  },
+  {
+    "question": "Por que ouço principalmente um som de sopro?",
+    "answer": "Esse é frequentemente o som do sangue fluindo pela placenta — o que é um ótimo sinal de que você está na área certa. Tente mover o telefone um pouquinho de cada vez até ouvir um ritmo mais rápido e constante sobreposto a esse som."
+  },
+  {
+    "question": "Qual é a frequência cardíaca fetal normal?",
+    "answer": "O coração de um bebê geralmente bate muito mais rápido do que o seu — cerca de 110 a 160 batimentos por minuto. Se o que você está ouvindo for mais lento, pode ser apenas o seu próprio pulso."
+  },
+  {
+    "question": "Por que o aplicativo não mostra a frequência cardíaca ou os BPM?",
+    "answer": "Optamos por não exibir a frequência cardíaca porque isso entra no âmbito médico. O aplicativo foi projetado para ajudá-la a se conectar com seu bebê, não para fornecer informações médicas."
+  },
+  {
+    "question": "Está tudo bem se eu não conseguir encontrar os batimentos cardíacos?",
+    "answer": "Não conseguir ouvir não significa que haja algo de errado. A posição do seu bebê, o seu corpo e até mesmo a placenta podem afetar o que você ouve. Se você se sentir insegura ou preocupada, é sempre melhor entrar em contato com seu profissional de saúde."
+  },
+  {
+    "question": "E se eu sentir que deveria conseguir ouvir algo, mas não consigo?",
+    "answer": "Tente não se preocupar. Mesmo profissionais treinados às vezes precisam de tempo para encontrar os batimentos cardíacos com equipamentos especializados. Se algo não parecer certo, confie nos seus instintos e entre em contato com seu profissional de saúde."
+  },
+  {
+    "question": "Isso substitui o doppler da minha parteira?",
+    "answer": "Não — este aplicativo não é um dispositivo médico. Ele foi feito para momentos especiais e para criar laços, não para verificar a saúde do seu bebê. Se você tiver alguma preocupação, seu médico é sempre a pessoa certa para entrar em contato."
+  },
+  {
+    "question": "É seguro gravar com frequência?",
+    "answer": "Sim. O aplicativo usa apenas o microfone do seu telefone — ele não envia nada para dentro do seu corpo. Você pode usá-lo sempre que quiser."
+  },
+  {
+    "question": "Devo ativar o Modo Avião todas as vezes?",
+    "answer": "Recomendamos isso, apenas como uma precaução simples ao colocar o telefone perto do corpo."
+  },
+  {
+    "question": "Posso compartilhar minhas gravações?",
+    "answer": "Claro. Você pode compartilhá-las facilmente com seus entes queridos por meio de Mensagens, e-mail, AirDrop ou salvá-las em seus arquivos."
+  },
+  {
+    "question": "Onde minhas gravações são armazenadas?",
+    "answer": "Suas gravações ficam guardadas com segurança no seu dispositivo. Nada é enviado ou compartilhado, a menos que você opte por fazê-lo."
+  },
+  {
+    "question": "Como altero a data prevista do parto ou paro de acompanhar a gravidez?",
+    "answer": "Toque no selo da semana, no canto superior esquerdo da tela de escuta, para abrir Configurações. Lá você pode alterar a data prevista do parto, configurar lembretes ou parar de acompanhar a gravidez. Depois disso, o mesmo botão mostra uma engrenagem."
+  }
+]

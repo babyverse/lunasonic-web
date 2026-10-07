@@ -25,6 +25,15 @@ import heroNl from '../images/hero/nl.webp'
 import heroSv from '../images/hero/sv.webp'
 import heroNo from '../images/hero/no.webp'
 import heroDa from '../images/hero/da.webp'
+import faqEn from './faq/en.json'
+import faqEs from './faq/es.json'
+import faqDe from './faq/de.json'
+import faqFr from './faq/fr.json'
+import faqPt from './faq/pt.json'
+import faqNl from './faq/nl.json'
+import faqSv from './faq/sv.json'
+import faqNo from './faq/no.json'
+import faqDa from './faq/da.json'
 
 export const DEFAULT_LANG = 'en'
 
@@ -56,8 +65,23 @@ export const heroScreens = {
   da: heroDa,
 }
 
-// URL path for a locale. English (default) lives at the root; every other
+// Support page FAQ per locale, copied from the iOS app's help content by
+// bin/sync-help-content.js.
+export const faqs = {
+  en: faqEn,
+  es: faqEs,
+  de: faqDe,
+  fr: faqFr,
+  pt: faqPt,
+  nl: faqNl,
+  sv: faqSv,
+  no: faqNo,
+  da: faqDa,
+}
+
+// URL paths for a locale. English (default) lives at the root; every other
 // language lives under its own prefix, e.g. /de/, /pt/. Mirrors the page
 // generation in gatsby-node.js.
 export const pathForLang = (code) =>
   code === DEFAULT_LANG ? '/' : `/${code}/`
+export const supportPathForLang = (code) => `${pathForLang(code)}support/`

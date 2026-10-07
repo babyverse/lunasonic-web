@@ -7,8 +7,8 @@ const MarkdownPage = ({ data, location }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
-    <Layout location={location}>
-      <Seo title={frontmatter.title} />
+    <Layout>
+      <Seo title={frontmatter.title} pathname={location.pathname} />
       <h1>{frontmatter.title}</h1>
       <p className="updated">Last updated: {frontmatter.date}</p>
       <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "À partir de quelle semaine de grossesse est-il recommandé de commencer à utiliser l'application ?",
+    "answer": "Nous recommandons généralement de commencer vers la 22e semaine, lorsque le rythme cardiaque de votre bébé est plus facilement détectable de manière claire. Avant cela, il peut être plus difficile d'entendre quoi que ce soit — et c'est tout à fait normal."
+  },
+  {
+    "question": "Je n'entends rien — qu'est-ce que je fais de travers ?",
+    "answer": "Vous faites probablement tout correctement. Essayez de retirer la coque de votre téléphone, de vous installer dans un endroit très calme et d'ajuster légèrement la position. Même de petits mouvements peuvent faire une grande différence. Avant la 18e-20e semaine, il peut être particulièrement difficile d'entendre quoi que ce soit."
+  },
+  {
+    "question": "Quels sont les meilleurs endroits pour entendre les battements de cœur de votre bébé ?",
+    "answer": "Un bon point de départ est juste en dessous de votre nombril. À partir de là, essayez de déplacer lentement le téléphone par petits pas — même un ou deux centimètres peuvent changer ce que vous entendez."
+  },
+  {
+    "question": "Que puis-je faire si j'ai du mal à entendre les battements de cœur ?",
+    "answer": "Assurez-vous que le microphone (à côté du port de chargement) touche votre peau, et inclinez légèrement votre téléphone pour qu’il soit bien en place. Augmentez le volume et écoutez les sons doux et rythmés. Si vous n’entendez rien, soulevez le téléphone, déplacez-vous légèrement et réessayez."
+  },
+  {
+    "question": "Pourquoi est-ce que j'entends surtout un sifflement ?",
+    "answer": "C'est souvent le bruit du sang circulant dans le placenta — ce qui est un excellent signe indiquant que vous êtes au bon endroit. Essayez de déplacer le téléphone petit à petit jusqu'à ce que vous entendiez un rythme plus rapide et régulier par-dessus le sifflement."
+  },
+  {
+    "question": "Quel est le rythme cardiaque fœtal normal ?",
+    "answer": "Le cœur d'un bébé bat généralement beaucoup plus vite que le vôtre — environ 110 à 160 battements par minute. Si ce que vous entendez est plus lent, il s'agit peut-être simplement de votre propre pouls."
+  },
+  {
+    "question": "Pourquoi l'application n'affiche-t-elle pas le rythme cardiaque ou les battements par minute ?",
+    "answer": "Nous avons choisi de ne pas afficher le rythme cardiaque, car cela relève du domaine médical. L'application est conçue pour vous aider à créer un lien avec votre bébé, et non pour fournir des informations médicales."
+  },
+  {
+    "question": "Est-ce que tout va bien si je n'arrive pas à trouver le rythme cardiaque ?",
+    "answer": "Ne pas l'entendre ne signifie pas qu'il y a un problème. La position de votre bébé, votre corps et même le placenta peuvent tous influencer ce que vous entendez. Si vous vous sentez incertaine ou inquiète, il est toujours préférable de contacter votre professionnel de santé."
+  },
+  {
+    "question": "Que faire si j'ai l'impression que je devrais entendre quelque chose mais que je n'y arrive pas ?",
+    "answer": "Essayez de ne pas vous inquiéter. Même les professionnels qualifiés ont parfois besoin de temps pour trouver le rythme cardiaque avec un équipement spécialisé. Si quelque chose ne vous semble pas normal, fiez-vous à votre instinct et contactez votre professionnel de santé."
+  },
+  {
+    "question": "Est-ce que cela remplace le doppler de ma sage-femme ?",
+    "answer": "Non — cette application n'est pas un dispositif médical. Elle est destinée à des moments privilégiés et à créer des liens, et non à vérifier la santé de votre bébé. Si vous avez des inquiétudes, votre professionnel de santé est toujours la personne à contacter."
+  },
+  {
+    "question": "Est-ce sans danger d'enregistrer souvent ?",
+    "answer": "Oui. L'application utilise simplement le microphone de votre téléphone — elle n'envoie rien dans votre corps. Vous pouvez l'utiliser aussi souvent que vous le souhaitez."
+  },
+  {
+    "question": "Dois-je activer le mode Avion à chaque fois ?",
+    "answer": "Nous le recommandons, par simple précaution lorsque vous placez votre téléphone près de votre corps."
+  },
+  {
+    "question": "Puis-je partager mes enregistrements ?",
+    "answer": "Bien sûr. Vous pouvez facilement les partager avec vos proches via Messages, par e-mail, via AirDrop, ou les enregistrer dans vos fichiers."
+  },
+  {
+    "question": "Où sont stockés mes enregistrements ?",
+    "answer": "Vos enregistrements restent en sécurité sur votre appareil. Rien n'est téléchargé ni partagé, sauf si vous choisissez de le faire."
+  },
+  {
+    "question": "Comment modifier ma date d'accouchement ou arrêter le suivi de grossesse ?",
+    "answer": "Touchez le badge de la semaine, en haut à gauche de l'écran d'écoute, pour ouvrir les Réglages. Vous pouvez y modifier votre date d'accouchement, configurer des rappels ou arrêter le suivi de grossesse. Ensuite, le même bouton affiche une roue dentée."
+  }
+]
